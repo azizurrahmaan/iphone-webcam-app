@@ -24,8 +24,8 @@ This project is a web application that allows users to capture photos using thei
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd iphone-web-app
+   git clone https://github.com/azizurrahmaan/iphone-webcam-app
+   cd iphone-webcam-app
    ```
 
 2. Install the dependencies:
