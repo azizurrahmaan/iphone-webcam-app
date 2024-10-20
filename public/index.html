@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iPhone Camera Web App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div id="app">
-        <div id="angleMessage">Adjust phone angle</div>
-        <video id="video" autoplay playsinline></video>
-        <button id="switchCameraBtn" aria-label="Switch Camera">
-            <img src="icons/switch-camera.png" alt="Switch Camera" />
-        </button>
-        <div id="statusBar">
-          <p id="connectionStatus">Connecting...</p>
-          <button id="captureBtn" aria-label="Capture Photo"></button>
-        </div>
+      <div id="angleMessage">Adjust phone angle</div>
+      <video id="video" autoplay playsinline></video>
+      <button id="switchCameraBtn">
+        <img src="icons/switch-camera.png" alt="Switch Camera" />
+      </button>
+      <div id="statusBar">
+        <p id="statusMessage">Connecting...</p>
+        <button id="captureBtn"></button>
+      </div>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

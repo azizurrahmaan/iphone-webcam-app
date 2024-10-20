@@ -76,7 +76,7 @@ body, html {
   flex-wrap: wrap; /* Allow wrapping */
 }
 
-#connectionStatus {
+#statusMessage {
   font-size: 14px;
   font-weight: bold;
   flex: 1 1 100%; /* Take full width, allow wrapping */
@@ -86,15 +86,11 @@ body, html {
   max-width: 100%; /* Ensure text doesn't overflow */
 }
 
-#connectionStatus.connected {
+#statusMessage.success {
   color: #4CAF50;
 }
 
-#connectionStatus.disconnected {
-  color: #F44336;
-}
-
-#connectionStatus.error {
+#statusMessage.error {
   color: #FF0000;
   font-weight: bold;
 }
@@ -120,4 +116,9 @@ body, html {
 
 #captureBtn:active {
   background-color: #e0e0e0;
+}
+
+#captureBtn.angle-correct {
+  border-color: #4CAF50;
+  box-shadow: 0 0 15px #4CAF50;
 }
