@@ -1,0 +1,123 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  background-color: #000;
+}
+
+#video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+#angleMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+#switchCameraBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0;
+}
+
+#switchCameraBtn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#switchCameraBtn img {
+  width: 30px;
+  height: 30px;
+}
+
+#statusBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto; /* Changed from fixed height */
+  min-height: 80px; /* Minimum height to ensure enough space */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Added vertical padding */
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+#connectionStatus {
+  font-size: 14px;
+  font-weight: bold;
+  flex: 1 1 100%; /* Take full width, allow wrapping */
+  text-align: center;
+  margin-bottom: 10px; /* Space between status and button */
+  word-wrap: break-word; /* Allow long words to break */
+  max-width: 100%; /* Ensure text doesn't overflow */
+}
+
+#connectionStatus.connected {
+  color: #4CAF50;
+}
+
+#connectionStatus.disconnected {
+  color: #F44336;
+}
+
+#connectionStatus.error {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+#captureBtn {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid rgb(0 0 0 / 41%);
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+  flex: 0 0 auto;
+}
+
+#captureBtn:hover {
+  background-color: #f0f0f0;
+}
+
+#captureBtn:active {
+  background-color: #e0e0e0;
+}
